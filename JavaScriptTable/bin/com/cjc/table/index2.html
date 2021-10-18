@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function hello1()
+{
+	alert("in hello");
+	var table=document.getElementById("tab");
+	var row=table.insertRow();
+	var cell1=row.insertCell();
+	var cell2=row.insertCell();
+	var cell3=row.insertCell();
+	
+	cell1.innerHTML="rollno";
+	cell2.innerHTML="name";
+	cell3.innerHTML="address";
+	
+	
+	
+	var data=[{rollno:101,name:"ashish",address:"pune"},{rollno:102,name:"Shivraj",address:"akurdi"},{rollno:103,name:"Neel",address:"karvenagar"}]
+	for(var i=0;i<data.length;i++)
+		{
+		var row2=table.insertRow();
+		var cell1=row2.insertCell();
+		cell1.innerHTML=data[i].rollno;
+		
+		var cell2=row2.insertCell();
+		cell2.innerHTML=data[i].name;
+		
+		var cell3=row2.insertCell();
+		cell3.innerHTML=data[i].address;
+		
+		
+		
+		}
+}
+
+</script>
+</head>
+<body>
+
+
+<table id="tab" border="1"></table>
+<input type="button" value="ok" ondblclick="hello1()">
+</body>
+</html>

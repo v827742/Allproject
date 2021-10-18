@@ -1,0 +1,79 @@
+package com.cjc.app.fl.master.main.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity
+public class Ledger {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int ledgerId;
+	private int caseNo;
+	private double loanAmountPayToDealerAcc;
+	private double totalAmountPaid;
+	private double remaningAmountPaid;
+	private int tenure;
+	private double emiAmount;
+	private String lastEmiPaidDate;
+	private int remainingTenure;
+	
+	public int getLedgerId() {
+		return ledgerId;
+	}
+	public void setLedgerId(int ledgerId) {
+		this.ledgerId = ledgerId;
+	}
+	public int getCaseNo() {
+		return caseNo;
+	}
+	public void setCaseNo(int caseNo) {
+		this.caseNo = caseNo;
+	}
+	public double getLoanAmountPayToDealerAcc() {
+		return loanAmountPayToDealerAcc;
+	}
+	public void setLoanAmountPayToDealerAcc(double loanAmountPayToDealerAcc) {
+		this.loanAmountPayToDealerAcc = loanAmountPayToDealerAcc;
+	}
+	public double getTotalAmountPaid() {
+		return totalAmountPaid;
+	}
+	public void setTotalAmountPaid(double totalAmountPaid) {
+		this.totalAmountPaid = totalAmountPaid;
+	}
+	public double getRemaningAmountPaid() {
+		return remaningAmountPaid;
+	}
+	public void setRemaningAmountPaid(double remaningAmountPaid) {
+		this.remaningAmountPaid = remaningAmountPaid;
+	}
+	public int getTenure() {
+		return tenure;
+	}
+	public void setTenure(int tenure) {
+		this.tenure = tenure;
+	}
+	public double getEmiAmount() {
+		return emiAmount;
+	}
+	public void setEmiAmount(double emiAmount) {
+		this.emiAmount = emiAmount;
+	}
+	public String getLastEmiPaidDate() {
+		return lastEmiPaidDate;
+	}
+	public void setLastEmiPaidDate(String lastEmiPaidDate) {
+		this.lastEmiPaidDate = lastEmiPaidDate;
+	}
+	public int getRemainingTenure() {
+		return remainingTenure;
+	}
+	public void setRemainingTenure(int remainingTenure) {
+		this.remainingTenure = remainingTenure;
+	}
+
+	
+}

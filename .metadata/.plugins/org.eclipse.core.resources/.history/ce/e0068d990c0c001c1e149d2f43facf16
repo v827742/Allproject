@@ -1,0 +1,8 @@
+package com.cjc.app.fl.master.main.ServiceI;
+
+import com.cjc.app.fl.master.main.Model.Sanction;
+
+public interface HomeServiceI {
+
+	public void SanctionSave(Sanction sc);
+}

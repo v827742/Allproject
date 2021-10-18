@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.client.register-with-eureka",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.client.register-with-eureka'"
+  },
+  {
+    "name": "spring.client.fetch-registry",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.client.fetch-registry'"
+  }
+]}

@@ -1,0 +1,9 @@
+package Hirarchical_inheritence;
+
+public class C extends A{
+	
+	
+	
+	
+
+}

@@ -1,0 +1,51 @@
+<%@page import="com.cjc.model.Student"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<style>
+body{
+background-image: url("E:/41.jpg");
+}
+</style>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<center>
+<body>
+<h3 style="color:red">Student Data</h3>
+<table border="1" style="background-color: pink">
+<tr>
+<th>RollNo</th>
+<th>Name</th>
+<th>Mobile No</th>
+<th>Email Id</th>
+<th>Password</th>
+<th>Address Id</th>
+<th>CityName</th>
+<th>AreaName</th>
+</tr>
+
+<% List<Student> slist=(List)request.getAttribute("data");
+
+   for(Student stu:slist)
+{%>
+<tr>
+<td><input type="radio" id="rollno" value="<%=stu.getRollno() %>>">
+<%=stu.getRollno()%></td>
+<td><%=stu.getName() %></td>
+<td><%=stu.getMono() %></td>
+<td><%=stu.getEmail() %></td>
+<td><%=stu.getPass() %></td>
+<td><%=stu.getAddr().getAid() %></td>
+<td><%=stu.getAddr().getCityname() %></td>
+<td><%=stu.getAddr().getAname() %></td>
+</tr>
+<%} %>
+
+
+</table>
+</body>
+</html>

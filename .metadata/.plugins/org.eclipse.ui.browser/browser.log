@@ -1,0 +1,33 @@
+
+May 29, 2021 22:43:02.368 NEW SESSION
+May 29, 2021 22:43:02.368 [2892:9136:0529/224302.337:ERROR:device_event_log_impl.cc(214)] [22:43:02.337] FIDO: webauthn_api.cc:54 Windows WebAuthn API failed to load
+May 29, 2021 22:43:02.440 [2892:9136:0529/224302.440:ERROR:device_event_log_impl.cc(214)] [22:43:02.440] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+May 31, 2021 21:27:43.639 NEW SESSION
+May 31, 2021 21:27:43.639 [9628:2024:0531/212743.573:ERROR:device_event_log_impl.cc(214)] [21:27:43.570] FIDO: webauthn_api.cc:54 Windows WebAuthn API failed to load
+May 31, 2021 21:27:43.678 [9628:2024:0531/212743.677:ERROR:device_event_log_impl.cc(214)] [21:27:43.677] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+May 31, 2021 21:34:24.236 [9628:2024:0531/213424.235:ERROR:device_event_log_impl.cc(214)] [21:34:24.236] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+
+Jun 01, 2021 10:12:45.562 NEW SESSION
+Jun 01, 2021 10:12:45.562 [6192:1924:0601/101245.534:ERROR:device_event_log_impl.cc(214)] [10:12:45.533] FIDO: webauthn_api.cc:54 Windows WebAuthn API failed to load
+Jun 01, 2021 10:12:45.635 [6192:1924:0601/101245.634:ERROR:device_event_log_impl.cc(214)] [10:12:45.634] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jun 01, 2021 10:28:10.284 [6192:1924:0601/102810.284:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Invalid credentials (credentials rejected by client).
+Jun 01, 2021 10:57:20.298 [6192:512:0601/105720.297:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jun 01, 2021 10:57:44.994 [6192:512:0601/105744.993:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jun 01, 2021 10:58:30.155 [6192:512:0601/105830.154:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+Jun 02, 2021 10:06:49.373 NEW SESSION
+Jun 02, 2021 10:06:49.373 [6508:5432:0602/100649.366:ERROR:device_event_log_impl.cc(214)] [10:06:49.366] FIDO: webauthn_api.cc:54 Windows WebAuthn API failed to load
+Jun 02, 2021 10:06:49.466 [6508:5432:0602/100649.466:ERROR:device_event_log_impl.cc(214)] [10:06:49.466] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jun 02, 2021 10:28:10.286 [6508:5432:0602/102810.285:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Invalid credentials (credentials rejected by client).
+
+Jul 09, 2021 10:50:36.967 NEW SESSION
+Jul 09, 2021 10:50:36.967 [4476:7672:0709/105036.545:ERROR:component_installer.cc(339)] Failed to read manifest or verify installation for Safety Tips (C:\Users\Aashish-\AppData\Local\Google\Chrome\User Data\SafetyTips\2657).: The system cannot find the file specified. (0x2)
+Jul 09, 2021 10:50:44.791 [4476:6228:0709/105044.791:ERROR:device_event_log_impl.cc(214)] [10:50:44.791] FIDO: webauthn_api.cc:53 Windows WebAuthn API failed to load
+Jul 09, 2021 10:50:45.108 [4476:6228:0709/105045.108:ERROR:device_event_log_impl.cc(214)] [10:50:45.108] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jul 09, 2021 12:56:42.543 [4152:3396:0709/125642.498:ERROR:device_event_log_impl.cc(214)] [12:56:42.498] FIDO: webauthn_api.cc:53 Windows WebAuthn API failed to load
+Jul 09, 2021 12:56:42.674 [4152:3396:0709/125642.673:ERROR:device_event_log_impl.cc(214)] [12:56:42.673] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+Jul 09, 2021 21:41:16.342 NEW SESSION
+Jul 09, 2021 21:41:16.342 [6308:3532:0709/214116.319:ERROR:device_event_log_impl.cc(214)] [21:41:16.320] FIDO: webauthn_api.cc:53 Windows WebAuthn API failed to load
+Jul 09, 2021 21:41:16.402 [6308:3532:0709/214116.402:ERROR:device_event_log_impl.cc(214)] [21:41:16.403] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)

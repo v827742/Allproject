@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Jul 10 13:14:29 IST 2021
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Aashish-\\eclipse-workspace\\DynamicMapOTOSpringProject\\WebContent\\WEB-INF\\lib\\spring-web-5.3.6-sources.jar=WEB-INF/lib/spring-web-5.3.6-sources.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Aashish-\\eclipse-workspace\\DynamicMapOTOSpringProject\\WebContent\\WEB-INF\\lib\\spring-web-5.3.6.jar=WEB-INF/lib/spring-web-5.3.6.jar

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+ function hello1(){
+	alert("in hello")
+	var table=document.getElementById("tble");
+	var row1=table.insertRow();
+	var cell1=row1.insertCell();
+	var cell2=row1.insertCell();
+	var cell3=row1.insertCell();
+	cell1.innerHTML="rollno";
+	cell2.innerHTML="name";
+	cell3.innerHTML="address";
+	
+}
+ </script>
+</head>
+<body>
+<table id="tble" border="1">
+</table>
+<input type="button" value="ok" ondblclick="hello1()">
+
+</body>
+</html>

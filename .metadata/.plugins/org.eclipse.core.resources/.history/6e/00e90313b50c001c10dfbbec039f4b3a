@@ -1,0 +1,156 @@
+package com.cjc.app.fl.master.main.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+import com.cjc.app.fl.master.main.model.Disburse;
+import com.cjc.app.fl.master.main.model.Ledger;
+
+import com.cjc.app.fl.master.main.model.Sanction;
+import com.cjc.app.fl.master.main.model.UpdateLedger;
+
+import com.cjc.app.fl.master.main.repository.DisburseRepository;
+import com.cjc.app.fl.master.main.repository.LedgerRepository;
+
+import com.cjc.app.fl.master.main.repository.SanctionRepository;
+import com.cjc.app.fl.master.main.repository.UpdateLedgerRepository;
+
+
+@Service
+public class HomeServiceImpl implements HomeService
+{
+	
+	@Autowired
+	SanctionRepository sanctRep;
+	
+	@Autowired
+	DisburseRepository disRep;
+	
+	@Autowired
+	LedgerRepository ledRep;
+	
+	@Autowired
+	UpdateLedgerRepository upLedRep;
+	
+
+	
+	@Override
+	public Sanction sanctionDetails(Sanction san) 
+	{
+		
+		return sanctRep.save(san);
+	}
+	
+	@Override
+	public Sanction getSanctionById(int loanId) 
+	{
+		Sanction s=sanctRep.findAllByLoanId(loanId);
+		
+		double loanAmount=s.getLoanAmount();
+		float ro= s.getRateOfInterest();
+		int t= s.getTenure();
+		
+		double emi;
+		
+		ro = ro / (12 * 100); // one month interest
+		t = t * 12; // one month period
+		emi = (loanAmount * ro * (double)Math.pow(1 + ro, t))
+				/ (double)(Math.pow(1 + ro, t) - 1);
+	
+		System.out.println(emi);
+		s.setMonthlyEmi(emi);
+		
+		return s;
+	}
+	
+	public List<Sanction> getAllSanction()
+	{
+		return sanctRep.findAll();
+	}
+	
+	@Override
+	public Disburse disburseDetails(Disburse dis) 
+	{
+		
+		return disRep.save(dis);
+	}
+
+
+	@Override
+	public Ledger ledgerDetails(Ledger ledger) 
+	{
+		return ledRep.save(ledger);
+	}
+	
+	@Override
+	public List<Ledger> getAllLedger() 
+	{
+		return ledRep.findAll();
+	}
+
+	@Override
+	public Ledger getLedgerById(int ledgerId) 
+	{
+		return ledRep.findAllByLedgerId(ledgerId);
+	}
+	
+	@Override
+	public Ledger getByCaseNo(int caseNo) 
+	{
+		return ledRep.findByCaseNo(caseNo);
+	}
+
+	
+	@Override
+	public UpdateLedger updateLedger(UpdateLedger updateLedger) 
+	{
+		
+		return upLedRep.save(updateLedger);
+	}
+	
+	@Override
+	public List<UpdateLedger> getAllUpdateLedger() 
+	{
+		return upLedRep.findAll();
+	}
+
+	@Override
+	public UpdateLedger getByledgerUpdateId(int ledgerUpdateId) 
+	{
+		return upLedRep.findAllByLedgerUpdateId(ledgerUpdateId);
+	}
+
+	@Override
+	public UpdateLedger editUpdateLedger(UpdateLedger updateLedger) 
+	{
+		return upLedRep.save(updateLedger);
+	}
+
+	@Override
+	public List<Disburse> getAllDisburse() 
+	{
+		return disRep.findAll();
+	}
+
+	
+	@Override
+	public double emiCalculation(double r, double t, double p) 
+	{
+		double emi;
+		
+		r = r / (12 * 100); // one month interest
+		t = t * 12; // one month period
+		emi = (p * r * (double)Math.pow(1 + r, t))
+				/ (double)(Math.pow(1 + r, t) - 1);
+	
+		return emi;
+	}
+
+
+
+	
+
+}

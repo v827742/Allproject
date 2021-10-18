@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WebServiceRead/src/main/webapp/delete.jsp&apos; to &apos;read.jsp&apos;" description="Rename resource &apos;delete.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/delete.jsp" name="read.jsp" stamp="1626409226162" updateReferences="true"/>
+</session>

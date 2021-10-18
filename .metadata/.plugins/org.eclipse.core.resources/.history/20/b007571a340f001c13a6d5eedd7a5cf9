@@ -1,0 +1,30 @@
+package com.cjc.app.fl.master.main.service;
+
+import java.util.List;
+import com.cjc.app.fl.master.main.model.Disburse;
+import com.cjc.app.fl.master.main.model.Ledger;
+import com.cjc.app.fl.master.main.model.Sanction;
+import com.cjc.app.fl.master.main.model.UpdateLedger;
+
+
+public interface HomeService 
+{
+	public Sanction sanctionDetails(Sanction san);
+	public Disburse disburseDetails(Disburse dis);
+	public List<Disburse> getAllDisburse();
+	
+	public Ledger ledgerDetails(Ledger ledger);
+	public List<Ledger> getAllLedger();
+	public Ledger getLedgerById(int ledgerId);
+	public Ledger getByCaseNo(int caseNo);
+	
+	public UpdateLedger updateLedger(UpdateLedger updateLedger);
+	public Sanction getSanctionById(int loanId);
+	public List<Sanction> getAllSanction();
+	public List<UpdateLedger> getAllUpdateLedger();
+	public UpdateLedger getByledgerUpdateId(int caseNo);
+	public UpdateLedger editUpdateLedger(UpdateLedger updateLedger);
+	
+	
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validateform()
+{
+	var uname=document.myform.uname.value;
+	var pass=document.myform.pass.value;
+	
+	if(uname==null||uname=="")
+		{
+		alert("usename not be null")
+		return false;
+		}
+	else if(pass.length<6)
+		{
+		alert("password is not valid!it shoule be more than 6 words")
+		return false;
+		
+		}
+}
+</script>
+</head>
+<body>
+<form name="myform" action="log" onsubmit="return validateform()">
+
+userName:<input type="text" name="uname">
+passWord:<input type="password" name="pass">
+<input type="submit" value="submit" >
+</form>
+</body>
+</html>

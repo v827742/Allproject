@@ -1,0 +1,5 @@
+package com.cjc.app.fl.master.main.ServiceI;
+
+public interface HomeServiceI {
+
+}
